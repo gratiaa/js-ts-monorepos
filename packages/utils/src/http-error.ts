@@ -2,7 +2,7 @@
  * High-level outcome of an HTTP status code
  * @public
  */
-export enum HTTPErrorKind {
+export const enum HTTPErrorKind {
   Information = 100,
   Success = 200,
   Redirect = 300,
