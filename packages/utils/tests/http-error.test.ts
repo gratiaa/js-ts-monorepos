@@ -1,4 +1,4 @@
-import { HTTPError, HTTPErrorKind } from "@shlack/utils";
+import HTTPError, { HTTPErrorKind } from "../src/http-error";
 
 describe("HTTPError tests", function () {
   test("creation", () => {
@@ -6,6 +6,7 @@ describe("HTTPError tests", function () {
       { status: 404, statusText: "Not Found" },
       "Mock error for testing"
     );
-    expect(e.kind).toBe(HTTPErrorKind.Client);
+    //expect(e.kind).toBe(HTTPErrorKind.Client);
+    expect(e.kind).toBe(400);
   });
 });
