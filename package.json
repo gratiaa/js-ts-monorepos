@@ -10,9 +10,15 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@commitlint/config-lerna-scopes": "^17.2.1",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
+    "commitlint": "^17.2.0",
     "eslint": "^8.27.0",
+    "husky": "^8.0.0",
+    "lerna-changelog": "^2.2.0",
     "rimraf": "^3.0.2",
     "scripty": "^2.1.1",
     "typescript": "^4.8.4"
@@ -21,7 +27,8 @@
     "build": "scripty",
     "clean": "scripty",
     "lint": "scripty",
-    "test": "scripty"
+    "test": "scripty",
+    "prepare": "husky install"
   },
   "scripty": {
     "path": "./scripts/workspace"
